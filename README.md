@@ -1,7 +1,6 @@
 [![Java CI](https://github.com/AgentStart1/jlayer/actions/workflows/test.yml/badge.svg)](https://github.com/AgentStart1/jlayer/actions/workflows/test.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.storytellerf/jlayer)](https://central.sonatype.com/artifact/io.github.storytellerf/jlayer)
 
-<a id="jlayer"></a>
 # JLayer
 
 JLayer 是用于解码、播放和转换 MPEG 音频的纯 Java 库：
@@ -14,18 +13,15 @@ JLayer 是用于解码、播放和转换 MPEG 音频的纯 Java 库：
 
 JLayer 使用 Java Sound API 播放音频，没有生产依赖。
 
-<a id="requirements"></a>
 ## 环境要求
 
 - Java 17 或更新版本
 - 播放功能需要 Java Sound 支持
 
-<a id="installation"></a>
 ## 安装
 
 JLayer 已发布到 [Maven Central](https://central.sonatype.com/artifact/io.github.storytellerf/jlayer)。
 
-<a id="maven"></a>
 ### Maven
 
 ```xml
@@ -36,17 +32,14 @@ JLayer 已发布到 [Maven Central](https://central.sonatype.com/artifact/io.git
 </dependency>
 ```
 
-<a id="gradle"></a>
 ### Gradle
 
 ```kotlin
 implementation("io.github.storytellerf:jlayer:${jlayerVersion}")
 ```
 
-<a id="usage"></a>
 ## 使用
 
-<a id="play-an-mp3-from-java"></a>
 ### 从 Java 播放 MP3
 
 ```java
@@ -78,7 +71,6 @@ public final class PlayMp3 {
 
 底层播放器 API 也接受任意 `InputStream`，因此可使用网络流或应用提供的其他数据源。
 
-<a id="convert-mp3-to-wav"></a>
 ### 将 MP3 转换为 WAV
 
 命令行转换器由 `javazoom.jl.converter.jlc` 提供：
@@ -97,7 +89,6 @@ import javazoom.jl.converter.Converter;
 new Converter().convert("input.mp3", "output.wav");
 ```
 
-<a id="play-from-the-command-line"></a>
 ### 从命令行播放
 
 简单播放器支持本地文件和 URL：
@@ -113,7 +104,6 @@ java -cp jlayer.jar javazoom.jl.player.jlp -url https://example.com/audio.mp3
 java -cp jlayer.jar javazoom.jl.player.advanced.jlap input.mp3
 ```
 
-<a id="build-from-source"></a>
 ## 从源码构建
 
 ```bash
@@ -122,12 +112,10 @@ java -cp jlayer.jar javazoom.jl.player.advanced.jlap input.mp3
 
 项目使用 Gradle 构建，目标版本为 Java 17。生成的库 JAR 位于 `build/libs/`。
 
-<a id="license"></a>
 ## 许可证
 
 JLayer 按 [GNU Lesser General Public License v3.0](LICENSE.txt) 分发。
 
-<a id="history"></a>
 ## 历史
 
 JLayer 源于 JavaZOOM 的 JavaLayer 项目（1999–2008）。历史变更记录见 [CHANGES.txt](CHANGES.txt)，背景信息见[原项目主页](https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html)。

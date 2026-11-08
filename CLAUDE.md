@@ -1,19 +1,15 @@
-<a id="jlayer-project"></a>
 # JLayer 项目
 
-<a id="project-overview"></a>
 ## 项目概览
 
 JLayer 是纯 Java MP3 解码库，可实时解码、播放和转换 MPEG 1/2/2.5 Layer 1/2/3（MP3）。
 
-<a id="fork-information"></a>
 ## Fork 信息
 
 - **Fork 来源：** [umjammer/jlayer](https://github.com/umjammer/jlayer)
 - **上游：** storytellerF/jlayer
 - **主要远端：** AgentStart1/jlayer
 
-<a id="build-system"></a>
 ## 构建系统
 
 - **构建工具：** Gradle（Kotlin DSL）
@@ -21,7 +17,6 @@ JLayer 是纯 Java MP3 解码库，可实时解码、播放和转换 MPEG 1/2/2.
 - **Java 版本：** 17
 - **发布：** 通过 Vanniktech Maven Publish 插件发布至 Maven Central
 
-<a id="maven-coordinates"></a>
 ## Maven 坐标
 
 ```
@@ -29,13 +24,11 @@ groupId: io.github.storytellerf
 artifactId: jlayer
 ```
 
-<a id="dependencies"></a>
 ## 依赖
 
 - **生产：** 无（纯 Java 库）
 - **测试：** 仅 JUnit 5（没有外部测试依赖）
 
-<a id="development-notes"></a>
 ## 开发说明
 
 - CI/CD 使用 GitHub Actions 执行测试并发布至 Maven Central。
